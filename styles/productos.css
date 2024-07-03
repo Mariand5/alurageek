@@ -1,0 +1,49 @@
+section.mis_productos{
+    
+}
+
+.titulo_productos{
+    text-align: center;
+}
+
+.card_container{
+    display: flex;
+    justify-content: center;
+}
+
+.card{
+    background-color: #5300C8;
+    height: 280px;
+    width: 45%;
+    border: 5px solid black;
+    border-radius: 10px;
+    margin: 1em 0 1em 1em;
+    display: flex;
+    flex-direction: column;
+}
+
+.imagen_producto{
+    width: 90%;
+    height: auto;
+    border: 5px solid black;
+    border-radius: 10px;
+    margin: 10px 0 10px 0;
+    align-self: center;
+}
+
+p{
+    color: white;
+    font-size: 20px;
+    margin: 5px 0 0 10px;
+}
+
+.card_value{
+    display: flex;
+    flex-direction: row;
+    gap: 6em;
+    font-weight: bold;
+}
+
+.logo_trash{
+    position: relative;
+}
