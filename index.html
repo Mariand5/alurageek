@@ -1,58 +1,50 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AluraGeek</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./styles/reset.css">
-    <link rel="stylesheet" href="./styles/styles.css">
-</head>
-<body>
-    <header>
-        <img class="logo_header" src="./assets/logo-header.png" alt="3 corazones al estilo arcade">
-        <h1 class="titulo">AluraGeek</h1>
-    </header>
-    <main>
-        <section class="formulario">
-            <h1 class="titulo_formulario">AGREGAR PRODUCTO:</h1>
-            <form>
-                <input type="text" class="entrada_formulario"  name="nombre" placeholder="Nombre" required>
-                <input type="text" class="entrada_formulario" name="precio" placeholder="Precio" required>
-                <input type="text" class="entrada_formulario" name="imagen" placeholder="Imagen" required>
-                <div class="botones">
-                    <input class="boton_enviar" type="submit">
-                    <input class="boton_limpiar" type="reset"  value="Limpiar">
-                </div>
-            </form> 
-        </section>
-    
-        <section class="mis_productos">
-            <h2 class="titulo_productos">Mis productos</h2>
-            <div class="card_container">
-                <div class="card">
-                    <img class="imagen_producto" src="./assets/gameboy.png"/>
-                    <div class="card_info">
-                        <p>Nombre</p>
-                        <div class="card_value">
-                            <p>$ 00.00</p>
-                            <img class="logo_trash" src="./assets/eliminar.png"/>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-    <footer>
-        <div class="logo">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>AluraGeek</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./styles/reset.css">
+        <link rel="stylesheet" href="./styles/styles.css">
+    </head>
+    <body>
+        <header>
             <img class="logo_header" src="./assets/logo-header.png" alt="3 corazones al estilo arcade">
-        <h1 class="titulo">AluraGeek</h1>
-        </div>
-        <p>Desarrollado por Mariana da Vila</p>
-        <p>Alura LATAM 2024</p>
-    </footer>
-    <!--<script src="./js/script.js"></script>-->
-</body>
+            <h1 class="titulo">AluraGeek</h1>
+        </header>
+        <main>
+            <section class="agregar_productos">
+                <h1 class="titulo_formulario">AGREGAR PRODUCTO:</h1>
+                <form class="formulario" data-formulario>
+                    <input type="text" class="entrada_formulario"  name="nombre" placeholder="Nombre" data-nombre required>
+                    <input type="text" class="entrada_formulario" name="precio" placeholder="Precio" data-precio required>
+                    <input type="text" class="entrada_formulario" name="imagen" placeholder="Imagen" data-imagen required>
+                    <div class="botones">
+                        <input class="boton_enviar" type="submit">
+                        <input class="boton_limpiar" type="reset"  value="Limpiar">
+                    </div>
+                </form> 
+            </section>
+        
+            <section class="mis_productos">
+                <h2 class="titulo_productos">Mis productos</h2>
+                <div class="card_container">
+                    
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div class="logo">
+                <img class="logo_header" src="./assets/logo-header.png" alt="3 corazones al estilo arcade">
+            <h1 class="titulo">AluraGeek</h1>
+            </div>
+            <p>Desarrollado por Mariana da Vila</p>
+            <p>Alura LATAM 2024</p>
+        </footer>
+        <script src="./js/mostrarProductos.js" type="module"></script>
+        <script src="./js/enviarProducto.js" type="module"></script>
+    </body>
 </html>

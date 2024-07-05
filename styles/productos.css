@@ -1,7 +1,3 @@
-section.mis_productos{
-    
-}
-
 .titulo_productos{
     text-align: center;
 }
@@ -23,11 +19,10 @@ section.mis_productos{
 }
 
 .imagen_producto{
-    width: 90%;
-    height: auto;
+    width: auto;
+    height: 70%;
     border: 5px solid black;
     border-radius: 10px;
-    margin: 10px 0 10px 0;
     align-self: center;
 }
 
@@ -40,10 +35,10 @@ p{
 .card_value{
     display: flex;
     flex-direction: row;
-    gap: 6em;
     font-weight: bold;
+    justify-content: space-between;
 }
 
 .logo_trash{
-    position: relative;
+    margin-right: 10px;
 }
