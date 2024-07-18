@@ -35,7 +35,7 @@ async function enviarProducto(nombre, precio, imagen, id){
 }
 
 async function eliminarProducto (id){
-    fetch(`http://localhost:3000/productos/${id}`, {
+    await fetch(`http://localhost:3000/productos/${id}`, {
         method: "DELETE",
         headers: {
             'Content-type': 'application/json'
